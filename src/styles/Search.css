@@ -12,3 +12,48 @@
   .search-box::placeholder {
     color: #333;
   }
+
+.wrapper {
+  position: relative;
+  display: inline-block;
+  width: 260px;
+}
+
+.search-box:focus {
+  border-color: #0f9d58;
+  box-shadow: 0 0 5px rgba(15, 157, 88, 0.3);
+}
+
+
+.dropdowns {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 10%;
+  background: white;
+  color: black;
+  list-style: none;
+  padding: 5px;
+  margin-left: 50%;
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  z-index: 999;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.dropdowns li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.dropdowns li:hover {
+  background: #f5f5f5;
+}
+
+.no-result {
+  padding: 10px;
+  color: gray;
+  text-align: center;
+}

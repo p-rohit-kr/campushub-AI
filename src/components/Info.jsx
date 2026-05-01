@@ -19,7 +19,7 @@ export default function Info() {
         </a>       
         </div>
         <div className="image">
-            <img src="/images/info.jpeg" alt="picture"></img>
+            <img src="/images/cmps.png" alt="picture"></img>
         </div>  
       </div>
     );
