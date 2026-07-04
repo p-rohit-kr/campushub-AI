@@ -29,7 +29,7 @@ export default function Hero() {
     try {
 
       const response = await fetch(
-        "http://localhost:5000/api/chat",
+         "https://campushub-ai-production-65a1.up.railway.app/api/chat",
         {
           method: "POST",
 
