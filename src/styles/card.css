@@ -1,16 +1,14 @@
-/* Container (poora section) */
+
 .container {
     width: 150px;
-    top: 400px;
+    top: 408px;
     left: 20px;
     position: absolute;
     z-index: 2;
     padding: 20px;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;  
   }
   
-  /* Grid layout */
   .cards {
     margin-top: 0;
     display: grid;
@@ -18,9 +16,7 @@
     gap: 25px;
   }
   
-  /* Individual Card */
   .card {
-    /* border: 3px solid rgb(26, 2, 58); */
     backdrop-filter: blur(2px);
     color: #fff;
     background:whitesmoke;
@@ -31,13 +27,11 @@
     cursor: pointer;
   }
   
-  /* Hover effect */
   .card:hover {
     transform: translateY(-8px) scale(1.02);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
   }
   
-  /* Title */
   .card h3 {
     margin-top: 5px;
     border-bottom:3px solid burlywood;
@@ -47,9 +41,7 @@
     color: #110127;
   }
   
-  /* Description */
   .card .desc {
-
     background-size: cover;
     background-position: center;
     height: 100px;
@@ -59,8 +51,6 @@
     
   }
 
-  
-  /* Button */
   .btn {
     display: flex;
     justify-content: center;
@@ -80,18 +70,12 @@
     background: linear-gradient(135deg, #79ece3, #3e0dc4);
   }
   
-  
-
-  /* 🔥 Responsive Design */
-  
-  /* Tablet */
   @media (max-width: 992px) {
     .cards {
       grid-template-columns: repeat(2, 1fr);
     }
   }
   
-  /* Mobile */
   @media (max-width: 600px) {
     .container {
       padding: 20px;

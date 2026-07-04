@@ -20,7 +20,7 @@
 }
 
 .search-box:focus {
-  border-color: #0f9d58;
+  border-color: #fafdfc;
   box-shadow: 0 0 5px rgba(15, 157, 88, 0.3);
 }
 

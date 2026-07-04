@@ -1,5 +1,4 @@
 .footer {
-    /* background:rgb(229, 207, 250); */
     color:rgb(51, 1, 36);
     padding: 40px 20px;
     background: 
@@ -55,8 +54,7 @@
   .footer-bottom span {
     color: #00ff88;
   }
-  
-  /* Responsive */
+
   @media (max-width: 1024px) {
     .footer-container {
       grid-template-columns: repeat(3, 1fr);

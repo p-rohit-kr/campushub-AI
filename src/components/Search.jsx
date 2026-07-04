@@ -45,7 +45,6 @@ export default function SearchBox() {
     "Explore study materials..."
   ];
 
-  // 🔥 Dummy data (tum baad me API se replace kar sakte ho)
   const data = [
     "MBA Notes",
     "BCA Syllabus",
@@ -57,8 +56,6 @@ export default function SearchBox() {
 
   const [placeholder, setPlaceholder] = useState(placeholders[0]);
   const [index, setIndex] = useState(0);
-
-  // 🔥 Added states (search ke liye)
   const [search, setSearch] = useState("");
   const [filtered, setFiltered] = useState([]);
 
@@ -74,7 +71,6 @@ export default function SearchBox() {
     setPlaceholder(placeholders[index]);
   }, [index]);
 
-  // 🔥 Added search logic
   const handleChange = (e) => {
     const value = e.target.value;
     setSearch(value);
@@ -101,7 +97,6 @@ export default function SearchBox() {
         onChange={handleChange}
       />
 
-      {/* 🔥 Dropdown (optional UI) */}
       {filtered.length > 0 && (
         <ul className="dropdowns">
           {filtered.map((item, i) => (

@@ -27,13 +27,13 @@ export default function LoginModal({ closeModal, setUser }) {
         <h2>Login</h2>
 
         <form onSubmit={handleLogin}>
-          <input type="email" name="email" placeholder="Enter UserName" onChange={handleChange} />
+          <input type="email" name="email" placeholder="Enter UserName"
+           onChange={handleChange} />
           <br /><br />
-
-          <input type="password" name="password" placeholder="Enter Password" onChange={handleChange} />
+          <input type="password" name="password" placeholder="Enter Password" 
+          onChange={handleChange} />
           <br /><br />
-
-          <button type="submit">Login</button>
+         <button type="submit">Login</button>
         </form>
 
         <button className="close-btn" onClick={closeModal}>X</button>

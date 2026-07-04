@@ -1,3 +1,4 @@
+
 import "../styles/card.css";
 import { Link } from "react-router-dom";
 export function Card({ title, desc, exp, img , path}) {

@@ -12,7 +12,30 @@ import CreateAccount from "./components/CreateAccount";
 export default function App() {
   const [open, setOpen] = useState(false);
   const [user, setUser] = useState(null);
-  const [showSignup, setShowSignup] = useState(true); // 🔥 AUTO OPEN
+  const [showSignup, setShowSignup] = useState(true); 
+
+ const sendMessage = async () => {
+
+  const response = await fetch(
+    "http://localhost:5000/api/chat",
+    {
+      method: "POST",
+
+      headers: {
+        "Content-Type": "application/json",
+      },
+
+      body: JSON.stringify({
+        message: "Hello AI",
+      }),
+    }
+  );
+
+  const data = await response.json();
+
+  console.log(data);
+};
+
 
   useEffect(() => {
     const storedUser = localStorage.getItem("user");
@@ -23,7 +46,6 @@ export default function App() {
 
   return (
     <>
-      {/* 🔥 modal control */}
       {showSignup && (
         <CreateAccount 
           setUser={setUser} 
@@ -47,3 +69,6 @@ export default function App() {
     </>
   );
 }
+
+
+

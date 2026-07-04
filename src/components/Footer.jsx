@@ -5,7 +5,6 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-container">
 
-        {/* Address */}
         <div className="footer-section">
           <h3>Student Hub</h3>
           <p>
@@ -21,7 +20,6 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Company */}
         <div className="footer-section">
           <h4>Company</h4>
           <ul>
@@ -33,7 +31,6 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Explore */}
         <div className="footer-section">
           <h4>Explore</h4>
           <ul>
@@ -45,8 +42,6 @@ export default function Footer() {
           </ul>
         </div>
 
-
-        {/* Courses */}
         <div className="footer-section">
           <h4>Courses</h4>
           <ul>
@@ -57,7 +52,6 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Preparation */}
         <div className="footer-section">
           <h4>  PYQ's paper</h4>
           <ul>
@@ -72,7 +66,6 @@ export default function Footer() {
 
       </div>
 
-      {/* Bottom */}
       <div className="footer-bottom">
         © 2026 Student Hub. All rights reserved. <br />
         <span>Learn • Practice • Grow 🚀</span>
