@@ -77,7 +77,7 @@ export default function Hero() {
           className="start"
           onClick={() => setOpen(true)}
         >
-          Ask anything
+          Ask anything  🤪
         </button>
 
       </div>
