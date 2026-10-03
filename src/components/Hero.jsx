@@ -77,7 +77,7 @@ export default function Hero() {
           className="start"
           onClick={() => setOpen(true)}
         >
-          Open AI Chatbot
+          Ask anything
         </button>
 
       </div>
@@ -122,20 +122,23 @@ export default function Hero() {
 
             <div className="bottom">
 
-              <input
-                type="text"
-                placeholder="Type your message..."
-                value={message}
-                onChange={(e) =>
-                  setMessage(e.target.value)
+            <input
+              type="text"
+              placeholder="Type your message..."
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  sendMessage();
                 }
-              />
+            }}
+            />
 
               <button
                 className="send"
                 onClick={sendMessage}
               >
-                Send
+                ➥
               </button>
 
             </div>
